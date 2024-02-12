@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:get/get.dart';
 
 import '../../../data/models/user_model.dart';
@@ -45,18 +43,13 @@ class ProfileController extends GetxController with StateMixin<RxList<User>> {
   }
 
   void loadNextPage() {
-    isLoadingPage = true;
-    page++;
+    if (page < user.totalPages) {
+      page++;
 
-    if (page > user.totalPages) {
-      isLoadingPage = false;
-      update();
+      getUser(page);
+    } else {
       Get.snackbar("No more items", "No items to display");
       return;
     }
-    getUser(page);
-
-    isLoadingPage = false;
-    update();
   }
 }

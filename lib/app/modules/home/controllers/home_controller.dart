@@ -3,9 +3,7 @@ import 'dart:developer';
 import 'package:get/get.dart';
 import 'package:tasks/app/data/models/country.dart';
 import 'package:tasks/app/data/models/state.dart';
-import 'package:tasks/app/data/models/user_model.dart';
 import 'package:tasks/app/data/services/api_service.dart';
-import 'package:tasks/app/data/user_repo/user_repo_impl.dart';
 
 class HomeController extends GetxController {
   List<CountryModel> countries = [];
@@ -15,27 +13,12 @@ class HomeController extends GetxController {
   String? countryName;
   String? stateName;
 
-
-
   final ApiService _apiService = ApiService.instance;
-
-
 
   @override
   void onInit() {
     super.onInit();
     getCountry();
-
-  }
-
-  @override
-  void onReady() {
-    super.onReady();
-  }
-
-  @override
-  void onClose() {
-    super.onClose();
   }
 
   Future<void> getCountry() async {
@@ -81,6 +64,4 @@ class HomeController extends GetxController {
       }
     });
   }
-
-
 }
