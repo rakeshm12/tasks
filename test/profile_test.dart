@@ -8,7 +8,5 @@ void main() {
     final val = controller.page;
 
     expect(val, 1);
-
-
   });
 }

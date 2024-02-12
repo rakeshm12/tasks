@@ -15,7 +15,6 @@ class HomeView extends GetView<HomeController> {
         title: const Text('HomeView'),
         centerTitle: true,
       ),
-
       body: GetBuilder(
           init: HomeController(),
           builder: (controller) {
