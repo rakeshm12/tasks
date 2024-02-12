@@ -3,15 +3,14 @@ import 'package:flutter/material.dart';
 class DisplayName extends StatelessWidget {
   const DisplayName({
     super.key,
+    this.prefix = "",
     required this.firstName,
     required this.secondName,
-    required this.prefix,
-    required this.suffix,
+     this.suffix = "",
   });
-
+  final String prefix;
   final String firstName;
   final String secondName;
-  final String prefix;
   final String suffix;
 
   @override
@@ -19,9 +18,9 @@ class DisplayName extends StatelessWidget {
     return Text(
       "$prefix $firstName $secondName $suffix",
       style: const TextStyle(
-        fontSize: 14.0,
+        fontSize: 16.0,
         fontWeight: FontWeight.bold,
-        color: Colors.black,
+        color: Color(0xff608dbc),
       ),
     );
   }
