@@ -1,5 +1,9 @@
 # tasks
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1e6f455e34f4d78d2f6aa5b0d7d251b43389c13e
 A new Flutter project.
 
 ## Getting Started
