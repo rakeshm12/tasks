@@ -1,0 +1,44 @@
+{
+  "states": [
+    {
+      "name": "KA",
+      "id": "india"
+    },
+    {
+      "name": "KL",
+      "id": "india"
+    },
+    {
+      "name": "TN",
+      "id": "india"
+    },
+    {
+      "name": "MH",
+      "id": "india"
+    },
+    {
+      "name": "AL",
+      "id": "us"
+    },
+    {
+      "name": "DE",
+      "id": "us"
+    },
+    {
+      "name": "GA",
+      "id": "us"
+    },
+    {
+      "name": "ON",
+      "id": "canada"
+    },
+    {
+      "name": "QC",
+      "id": "canada"
+    },
+    {
+      "name": "BC",
+      "id": "canada"
+    }
+  ]
+}
